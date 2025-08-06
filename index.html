@@ -1,283 +1,278 @@
-
-<index class="html"></index>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <style>
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blessing's Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
 
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
 
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-        nav a:hover {
-            background-color: #575757;
-        }
+    nav a:hover {
+      background-color: #575757;
+    }
 
-        main {
-            padding: 2rem;
-        }
+    main {
+      padding: 2rem;
+    }
 
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        html {
-    scroll-behavior: smooth;
-}
- .gallery-section {
-  background-color: #ffffff;
-  padding: 30px;
-  text-align: center;
-}
+    footer {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
 
-.gallery-section h2 {
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
+    /* Gallery Styles */
+    .gallery-section {
+      background-color: #ffffff;
+      padding: 30px;
+      text-align: center;
+    }
 
-.gallery img {
-  width: 250px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
+    .gallery-section h2 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
 
-.gallery img:hover {
-  transform: scale(1.05);
-}
-.services-section {
-  background-color: #f8f8f8;
-  padding: 40px 20px;
-  text-align: center;
-}
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
 
-.services-section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #2c3e50;
-}
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
 
-.service-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
 
-.service-box {
-  background-color: #ffffff;
-  padding: 20px;
-  width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
+    /* Services Section */
+    .services-section {
+      background-color: #f8f8f8;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-.service-box:hover {
-  transform: translateY(-5px);
-}
+    .services-section h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
 
-.service-box h3 {
-  font-size: 20px;
-  color: #333;
-  margin-bottom: 10px;
-}
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
 
-.service-box p {
-  color: #555;
-  font-size: 15px;
-  line-height: 1.6;
-}
-.contact-section {
-  background-color: #ffffff;
-  padding: 40px 20px;
-  text-align: center;
-}
+    .service-box {
+      background-color: #ffffff;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
 
-.contact-section h2 {
-  font-size: 28px;
-  color: #2c3e50;
-  margin-bottom: 10px;
-}
+    .service-box:hover {
+      transform: translateY(-5px);
+    }
 
-.contact-section p {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 30px;
-}
+    .service-box h3 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    }
 
-.contact-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
+    .service-box p {
+      color: #555;
+      font-size: 15px;
+      line-height: 1.6;
+    }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  width: 100%;
-  box-sizing: border-box;
-}
+    /* Contact Section */
+    .contact-section {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
 
-.contact-form button {
-  background-color: #2c3e50;
-  color: white;
-  border: none;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+    .contact-section h2 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
 
-.contact-form button:hover {
-  background-color: #1a242f;
-}
+    .contact-section p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 30px;
+    }
 
-</style>
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-    </style>
+    .contact-form input,
+    .contact-form textarea {
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .contact-form button {
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #1a242f;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <main>
-        <section id="home">
-        <h2>Hello, I'm Blessing!
-            The CEO of BLESSED TECH</h2>
-        <p>This is my simple website to introduce to you what we do.</p>
-        
-        <div style="text-align: center;">
-  <img src="IMG-20250806-WA0044.jpg" alt="Blessing's Photo" width="300">
-  <img src="IMG-20250806-WA0043.jpg" alt="Blessing's Photo" width="300">
-  <img src="photo.jpg" alt="Blessing's Photo" width="300">
-</div>
+  <main>
 
-       
-        <section id="about">
-  <h2>About Me</h2>
-  <p>
-    Hello! My name is Blessing Ogundipe, i'm originally from Ogun state, and I am a passionate CCTV engineer with several years of hands-on experience in security systems installation and maintenance. I specialize in designing, setting up, and troubleshooting CCTV surveillance solutions for homes, offices, and large-scale facilities.
-  </p>
-  <p>
-    I deal with all types of gadgets — from surveillance cameras and security alarms to smart home devices and networking equipment. My broad knowledge of technology helps me provide complete and reliable solutions for both security and convenience.
-  </p>
-  <p>
-    My journey into security technology began with a strong interest in electronics and a desire to help people feel safer in their environment. Over the years, I have worked on various projects involving modern IP cameras, DVR/NVR systems, remote monitoring, and network configurations.
-  </p>
-  <p>
-    I am committed to delivering reliable and efficient security solutions tailored to each client’s unique needs. Whether it's a simple home installation or a complex commercial setup, I bring professionalism, precision, and dedication to every project.
-  </p>
-  <p>
-    Outside of work, I enjoy learning about new technologies, improving my web development skills, and helping others understand how they can secure their spaces effectively.
-  </p>
-</section>
-<section class="gallery-section">
-  <h2>My Work & Gadgets</h2>
-  <div style="text-align: center;">
-  <img src="images/Camera.jpg" alt="CCTV Camera" width="300">
-  <img src="images/monitor.jpg" alt="Installation work" width="300">
-  <img src="images/IMG-20250806-WA0032.jpg" alt="Gadgets collection" width="300">
-  <img src="images/IMG-20250806-WA0031.jpg" alt="Gadget" width="300">
-  <img src="images/IMG-20250806-WA0036.jpg" alt="CCTV Camera" width="300">
-</div>
+    <!-- Home Section -->
+    <section id="home">
+      <h2>Hello, I'm Blessing! The CEO of BLESSED TECH</h2>
+      <p>This is my simple website to introduce what we do.</p>
 
-  <section id="services" class="services-section">
-  <h2>My Services</h2>
-  <div class="service-list">
-    <div class="service-box">
-      <h3>CCTV Installation</h3>
-      <p>I install high-quality surveillance systems for homes, offices, and businesses with professional cabling and setup. i'm also good in installation of fire alarm system, Burglary alarm and Acess control.
-      </p>
-    </div>
-    <div class="service-box">
-      <h3>Gadget Repairs</h3>
-      <p>I troubleshoot and repair various electronic devices including smart home gadgets, routers, fire alarms, and more.</p>
-    </div>
-    <div class="service-box">
-      <h3>Networking</h3>
-      <p>Need internet everywhere? I set up Wi-Fi, LAN, and network solutions for smooth connectivity.</p>
-    </div>
-  
+      <div style="text-align: center;">
+        <img src="images/IMG-20250806-WA0044.jpg" alt="Blessing's Photo" width="300">
+        <img src="images/IMG-20250806-WA0043.jpg" alt="Blessing's Photo" width="300">
+        <img src="images/photo.jpg" alt="Blessing's Photo" width="300">
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is Blessing Ogundipe, I'm originally from Ogun State, and I am a passionate CCTV engineer with several years of hands-on experience in security systems installation and maintenance. I specialize in designing, setting up, and troubleshooting CCTV surveillance solutions for homes, offices, and large-scale facilities.</p>
+      <p>I deal with all types of gadgets — from surveillance cameras and security alarms to smart home devices and networking equipment. My broad knowledge of technology helps me provide complete and reliable solutions for both security and convenience.</p>
+      <p>My journey into security technology began with a strong interest in electronics and a desire to help people feel safer in their environment. Over the years, I have worked on various projects involving modern IP cameras, DVR/NVR systems, remote monitoring, and network configurations.</p>
+      <p>I am committed to delivering reliable and efficient security solutions tailored to each client’s unique needs. Whether it's a simple home installation or a complex commercial setup, I bring professionalism, precision, and dedication to every project.</p>
+      <p>Outside of work, I enjoy learning about new technologies, improving my web development skills, and helping others understand how they can secure their spaces effectively.</p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+      <h2>My Work & Gadgets</h2>
+      <div class="gallery">
+        <img src="images/Camera.jpg" alt="CCTV Camera">
+        <img src="images/monitor.jpg" alt="Installation work">
+        <img src="images/IMG-20250806-WA0032.jpg" alt="Gadgets collection">
+        <img src="images/IMG-20250806-WA0031.jpg" alt="Gadget">
+        <img src="images/IMG-20250806-WA0036.jpg" alt="CCTV Camera">
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <h2>My Services</h2>
+      <div class="service-list">
+        <div class="service-box">
+          <h3>CCTV Installation</h3>
+          <p>I install high-quality surveillance systems for homes, offices, and businesses. I'm also good in installation of fire alarm systems, burglary alarms, and access control.</p>
+        </div>
+        <div class="service-box">
+          <h3>Gadget Repairs</h3>
+          <p>I troubleshoot and repair various electronic devices including smart home gadgets, routers, fire alarms, and more.</p>
+        </div>
+        <div class="service-box">
+          <h3>Networking</h3>
+          <p>Need internet everywhere? I set up Wi-Fi, LAN, and network solutions for smooth connectivity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
     <section id="contact" class="contact-section">
-  <h2>Contact Me</h2>
-  <p>If you’d like to work with me or ask a question, feel free to reach out!</p>
+      <h2>Contact Me</h2>
+      <p>If you’d like to work with me or ask a question, feel free to reach out!</p>
 
-<form action="https://formsubmit.co/blessingogundipe9@gmail.com" method="POST" class="contact-form">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <form action="https://formsubmit.co/blessingogundipe9@gmail.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+        
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
-  <!-- You can hide extra form options if needed -->
-  <input type="hidden" name="_captcha" value="false">
-  <button type="submit">Send Message</button>
-  <input type="hidden" name="_next" value="https://yourwebsite.com/thankyou.html">
+  </main>
 
-</form>
-
-
-</section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Blessing's Website. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 Blessing's Website. All rights reserved.</p>
+  </footer>
 
 </body>
-
 </html>
